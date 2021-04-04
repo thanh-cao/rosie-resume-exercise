@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.rosie-logo {
+    background: url("../images/rosie.jpg") center / cover no-repeat;
+    min-height: 360px;
+    transition: all 0.5s ease-in-out;
+}
