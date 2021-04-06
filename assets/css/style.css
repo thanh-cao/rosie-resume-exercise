@@ -81,7 +81,6 @@ footer {
     background-color: #525252;
     padding: 1.5rem;
 }
-/* headings */
 
 
 /* icons */
@@ -158,4 +157,10 @@ footer {
 .work-timeline--item:last-child {
     padding-bottom: 0;
     margin-bottom: 3rem;
+}
+
+.contact-form .btn-primary {
+    background-color: #e84610;
+    border-color: #6c757d;
+    margin-top: 1rem;
 }
