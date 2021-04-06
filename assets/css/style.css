@@ -128,3 +128,34 @@ footer {
     text-align: left;
     margin-left: 1rem;
 }
+
+/* work history */
+.work-timeline {
+    padding: 0 1rem;
+}
+.work-timeline--item {
+    border-left: 1px solid white;
+    position: relative;
+    padding: 1rem;
+}
+.work-timeline--item:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    left: -6px;
+    z-index: 1;
+}
+.work-timeline--dates {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.work-timeline--item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+}
