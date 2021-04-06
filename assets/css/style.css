@@ -84,7 +84,7 @@ footer {
 
 
 /* icons */
-.about-me i {
+.about-me i, .my-skills i {
     color: #e67e22;
     font-size: 28px;
 }
