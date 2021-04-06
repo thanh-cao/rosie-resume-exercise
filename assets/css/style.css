@@ -30,7 +30,6 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     width: 100%;
-
 }
 .menu-item {
     width: 100%;
@@ -75,6 +74,9 @@ body {
 .bgcolor__personalinfo {
     background-color: #f4f4f4;
 }
+.bgcolor__workhistory {
+    background-color: #9b59b6;
+}
 footer {
     background-color: #525252;
     padding: 1.5rem;
@@ -109,4 +111,20 @@ footer {
 .social-links i:hover {
     background-color: #e67e22;
     transition: background-color 0.35s ease-in-out;
+}
+
+/* my skills */
+.skill-progress {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 2rem;
+}
+.progress {
+    height: 25px;
+    margin-bottom: 0.3rem;
+}
+.skill-progress-key {
+    text-shadow: 2px 2px 10px grey;
+    text-align: left;
+    margin-left: 1rem;
 }
