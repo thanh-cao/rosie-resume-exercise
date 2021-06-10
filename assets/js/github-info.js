@@ -1,5 +1,8 @@
 function fetchGitHubInformation(e) {
+  $("#gh-user-data").html("");
+  $("#gh-repo-data").html("");
   let username = $("#gh-username").val();
+
   if (!username) {
     $("#gh-user-data").html(`<h2>Please enter a GitHub username</h2>`);
     return;
@@ -53,24 +56,26 @@ function userInformationHTML(user) {
 }
 
 function repoInformationHTML(repos) {
-    if (repos.length === 0) {
-        return `
+  if (repos.length === 0) {
+    return `
             <div class="clearfix repo-list">No repos!</div>
         `;
-    }
+  }
 
-    let listItemsHTML = repos.map(repo => {
-        return `
+  let listItemsHTML = repos.map(repo => {
+    return `
             <li>
                 <a href="${repo.html_url}" target="_blank">${repo.name}</a>
             </li>
         `;
-    });
-    
-    return `
+  });
+
+  return `
         <div class="clearfix repo-list">
             <p><strong>Repo List:</strong></p>
-            <ul>${listItemsHTML.join('\n')}</ul>
+            <ul>${listItemsHTML.join("\n")}</ul>
         </div>
     `;
 }
+
+$(document).ready(fetchGitHubInformation);
