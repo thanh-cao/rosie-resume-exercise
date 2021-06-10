@@ -15,7 +15,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css">
+    <link href="assets/css/github-styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/github-info.js"></script>
     <title>Rosie Odenkirk | Resume</title>
 </head>
 
@@ -78,16 +81,18 @@
     </header>
 
     <section class="container-fluid">
-        <div class="row">
-            <div>
+        <div class="row p-3">
+            <div class="col">
                 <h3 class="section-heading text-uppercase text-center">View My GitHub Projects:</h3>
-                <h5 class="uppercase text-center">(or change the username to search for other user profiles)</h5>
-            </div>
+                <h5 class="text-uppercase text-center">(or change the username to search for other user profiles)</h5>
 
-            <div class="center-form">
-                <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()">
-                <div id="gh-user-data" class="clearfix"></div>
-                <div id="gh-repo-data" class="clearfix"></div>
+                <div class="d-flex justtify-content-center">
+                    <div class="center-form">
+                        <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()">
+                        <div id="gh-user-data"></div>
+                        <div id="gh-repo-data"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
