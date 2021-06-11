@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_D03GbcWBPcA8DxmkbECVw");
+        })();
+    </script>
     <title>Rosie Odenkirk | Resume</title>
 </head>
 
@@ -83,10 +90,10 @@
                 <h3 class="section-heading text-uppercase text-center">Got a project in mind?</h3>
                 <h5 class="text-uppercase text-center font-size-bold my-4">Let's work together!</h5>
 
-                <form class="contact-form">
+                <form class="contact-form" onsubmit="return sendMail(this);">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                    <textarea rows="5" class="form-control" id="project-description" name="project-description"
+                    <textarea rows="5" class="form-control" id="projectDescription" name="projectDescription"
                         placeholder="Project description" required></textarea>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Send Project Request</button>
@@ -155,6 +162,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
